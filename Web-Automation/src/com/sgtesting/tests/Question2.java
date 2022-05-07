@@ -13,8 +13,8 @@ public class Question2 {
 			login();
 			minimise();
 			createUser();
-			modifyUser();
-			deleteUser();
+			modifyUserName();
+			//deleteUser();
 			logout();
 			closeApplication();
 			
@@ -89,7 +89,7 @@ public class Question2 {
 				e.printStackTrace();
 			}
 		}
-		private static void modifyUser()
+		private static void modifyUserName()
 		{
 			try
 			{
@@ -97,15 +97,15 @@ public class Question2 {
 				Thread.sleep(1000);
 				oBrowser.findElement(By.name("firstName")).clear();
 				Thread.sleep(1000);
-				oBrowser.findElement(By.name("firstName")).sendKeys("User Modified");
+				oBrowser.findElement(By.name("firstName")).sendKeys("User Nithin");
 				Thread.sleep(1000);
 				oBrowser.findElement(By.name("lastName")).clear();
 				Thread.sleep(1000);
-				oBrowser.findElement(By.name("lastName")).sendKeys("Demo Modified");
+				oBrowser.findElement(By.name("lastName")).sendKeys("Demo HV");
 				Thread.sleep(1000);
 				oBrowser.findElement(By.name("username")).clear();
 				Thread.sleep(1000);
-				oBrowser.findElement(By.name("username")).sendKeys("UserNameModified");
+				oBrowser.findElement(By.name("username")).sendKeys("UserNameNithinHV");
 				Thread.sleep(1000);
 				oBrowser.findElement(By.xpath("//*[@id=\"userDataLightBox_commitBtn\"]/div")).click();
 				Thread.sleep(4000);
